@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About Kevin Conner - Tax Assessor Candidate"
+    />
+    <title>About Kevin Conner</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo"
+            ><img id="txlogo" src="txlogo1.png" alt="Logo"
+          /></a>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li>
+              <a
+                href="https://www.paypal.com/donate/?hosted_button_id=3CZTYUWKPUTNW"
+                >Donate</a
+              >
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Hamburger Menu for Mobile -->
+          <div class="hamburger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <div class="about-section">
+      <div class="about-content">
+        <h1 class="section-title">About Kevin Conner</h1>
+        <img
+          src="123_1.JPEG"
+          alt="Kevin Conner"
+          class="about-image kevin-img"
+        />
+        <div class="about-text">
+          <p>
+            Kevin Conner is the Chief Operating Officer (COO) of a renowned
+            hospitality company, where he has spent over a decade managing
+            top-tier resorts and delivering exceptional service to thousands of
+            guests. His leadership experience in the industry has not only
+            strengthened his skills in customer service and management but also
+            provided him with the ability to address the diverse needs of the
+            community.
+          </p>
+
+          <p>
+            As a community volunteer and active member of local organizations,
+            Kevin is deeply invested in the issues that affect everyday Texans.
+            Whether it’s working to improve customer experiences in his
+            professional life or advocating for better services in the
+            community, Kevin is dedicated to making a positive difference.
+          </p>
+
+          <p>
+            Kevin Conner believes that being a Tax Assessor-Collector is not
+            just about numbers—it’s about serving the people. His understanding
+            of local concerns and his experience in managing complex operations
+            gives him the perspective needed to provide fairness, transparency,
+            and accountability in the role of Tax Assessor-Collector.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <p>&copy; 2024 Kevin Conner. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Hamburger Menu Toggle
+      const hamburger = document.querySelector(".hamburger-menu");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

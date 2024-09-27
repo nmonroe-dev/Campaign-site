@@ -1,0 +1,306 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for main layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+.header {
+    background-color: #004080;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    position: relative;
+    border-bottom: #ff0000 solid 3px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nav Menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nav-menu li {
+    margin: 0 10px;
+}
+
+.nav-menu a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+}
+
+.nav-menu a:hover {
+    color: #ff0000; /* Red on hover */
+}
+
+/* Logo */
+.navbar #txlogo {
+    width: auto;
+    height: 40px;
+}
+
+.logo {
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Fancy Hover Effects */
+.nav-menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff0000;
+    transition: width 0.3s;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* Hamburger Menu Styling */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Hamburger Menu Toggle */
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: #004080;
+    width: 200px;
+    border-left: #ff0000 3px solid;
+}
+
+/* Events Section */
+.events-section {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: left;
+}
+
+.events-section h1 {
+    font-size: 36px;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+/* Section Title Styling */
+.section-title {
+    font-size: 36px;
+    text-align: center;
+    color: #004080;
+    position: relative;
+    margin-bottom: 30px;
+
+    /* Gradient text styling */
+    background: linear-gradient(90deg, #007BFF, #FF4500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Text shadow for better readability */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.section-subtitle1 {
+   
+        font-size: 36px;
+        text-align: center;
+        color: #004080;
+        position: relative;
+        margin-bottom: 30px;
+    
+        /* Gradient text styling */
+        background: linear-gradient(90deg, #007BFF, #FF4500);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+        /* Text shadow for better readability */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #ff0000;
+    margin: 10px auto 0;
+}
+
+.section-title:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Voting Dates & Campaign Events Lists */
+.voting-dates,
+.campaign-events {
+    margin: 20px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.voting-dates li,
+.campaign-events li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.voting-dates li:hover,
+.campaign-events li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #004080;
+    color: white;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-top: #ff0000 solid 3px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff0000;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    margin-right: 10px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #ff0000;
+    transform: scale(1.2);
+}
+
+.footer-social a i {
+    font-size: 20px;
+}
+
+.footer-social img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about-image {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+        width: 150px;
+    }
+
+    .about-section h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+}
