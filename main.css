@@ -144,6 +144,12 @@ a {
     color: white;
     overflow: hidden;
 }
+.hero #red {
+    color: #a60000;
+}
+.hero #blue {
+    color: blue;
+}
 
 #hero-video {
     position: absolute;
